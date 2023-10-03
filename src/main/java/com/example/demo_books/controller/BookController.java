@@ -1,5 +1,7 @@
-package com.example.demo_books.books;
+package com.example.demo_books.controller;
 
+import com.example.demo_books.service.BookService;
+import com.example.demo_books.entity.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,6 +1,8 @@
-package com.example.demo_books.books;
+package com.example.demo_books.config;
 
 
+import com.example.demo_books.entity.Book;
+import com.example.demo_books.repository.BookRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

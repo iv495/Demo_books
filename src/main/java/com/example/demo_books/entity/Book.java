@@ -1,4 +1,4 @@
-package com.example.demo_books.books;
+package com.example.demo_books.entity;
 
 import jakarta.persistence.*;
 
@@ -18,9 +18,27 @@ public class Book {
        generator = "book_sequence"
     )
 
+    @Column(
+            name = "id",
+            updatable = false
+    )
     private Long id;
+
+    @Column(
+            name= "title",
+            nullable = false,
+            columnDefinition = "TEXT"
+    )
     private String title;
+
+    @Column(
+            name= "author",
+            nullable = false,
+            columnDefinition = "TEXT"
+    )
     private String author;
+
+    @Column( name = "available")
     private boolean isAvailable;
 
     public Book() {
